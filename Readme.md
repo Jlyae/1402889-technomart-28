@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ольга Мичурина](https://up.htmlacademy.ru/htmlcss/28/user/1402889).
-* Наставник: [Виктория Коваленко] (https://up.htmlacademy.ru/htmlcss/28/user/42638).
+* Наставник: [Виктория Коваленко](https://up.htmlacademy.ru/htmlcss/28/user/42638).
 
 ---
 
