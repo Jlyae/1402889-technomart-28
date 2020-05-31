@@ -1,4 +1,4 @@
-.visually-hidden {
+.visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -8,7 +8,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-:root {
+:root{
     --black: #000000;
     --red: #EE3643;
     --white: #FFFFFF;
@@ -40,7 +40,7 @@
 }
 
 /*Общие параметры*/
-body {
+body{
     min-width: 960px;
     margin: 0;
     padding: 0;
@@ -49,37 +49,36 @@ body {
     background-color: var(--white);
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-img {
+img{
     max-width: 100%;
     height: auto;
 }
 
-/*.list-navigation,
-.transport-list*/
-/*Можно сделать так списки? Общим тегом*/
-li{
+/*Списки*/
+.list-navigation li,
+.transport-list li{
     list-style: none;
 }
 
 /*Header*/
 .logo{
     background-color: var(--red) ;
-    background-size: 220 px 47px;
+    background-size: 220px 47px;
 }
 
-.main-header {
+.main-header{
     background-color: var(--basic-background);
 }
 
-.main-header a {
+.main-header a{
     color: var(--white);
 }
 
-.main-menu {
+.main-menu{
     background-color: var(--darkgrey);
 }
 
@@ -90,7 +89,7 @@ li{
 .bookmarks, 
 .basket,
 .order,
-.main-navigation {
+.main-navigation{
     font-size: 18px;
     line-height: 24px;
     vertical-align: center;
@@ -98,21 +97,20 @@ li{
     font-family: 'Cuprum', sans-serif;
 }
 
-a.order {
+a.order{
     background-color: var(--basic-green);
 }
 
 .telephone a{
     font-size: 21px;
     line-height: 30px;
-    vertical-align: center;
     color: var(--red);
-    font-style: bold;
+    font-weight: bold;
     text-align: left;
     font-family: 'Cuprum', sans-serif;
 }
 
-.main-header p{
+p.name{
     font-size: 16px;
     line-height: 23px;
     vertical-align: center;
@@ -122,14 +120,15 @@ a.order {
     font-family: 'Cuprum', sans-serif;
 }
 
-.address {
+.address{
     font-size: 14px;
     font-style: normal;
     color: var(--blue);
+    font-family: 'Cuprum', sans-serif;    
 }
 
 a.login-enter,
-a.login-reg {
+a.login-reg{
     font-size: 21px;
     line-height: 21px;
     vertical-align: center;
@@ -138,11 +137,12 @@ a.login-reg {
     font-family: 'Cuprum', sans-serif;
 }
 
-a.login {
+a.login{
     font-size: 21px;
     line-height: 21px;
     text-align: center;
     color: var(--black);
+    font-family: 'Cuprum', sans-serif;
 }
 
 .account a{
@@ -153,17 +153,17 @@ a.login {
     font-family: 'Cuprum', sans-serif;
 }
 
-.telephone a::before {
+.telephone a::before{
     content: url(../img/icon-phone.svg);
     background-repeat: no-repeat;
 }
 
-a.bookmarks::before {
+a.bookmarks::before{
     content: url(../img/icon-bookmark.svg);
     background-repeat: no-repeat;
 }
 
-a.basket::before {
+a.basket::before{
     content: url(../img/icon-cart.svg);
     background-repeat: no-repeat;
 }
@@ -173,34 +173,36 @@ a.login-enter::before{
     background-repeat: no-repeat;
 }
 
-.logo:active {
+.logo:active{
     background-color: var(--error);
 }
 
 a.order:hover,
-a.order:focus {
+a.order:focus{
     background-color: var(--luck);
 }
 
 a.bookmarks:active,
-a.basket:active {
+a.basket:active{
     background-color: var(--verydarkblue);
     opacity: 0.5;
 }
 
 a.login-enter:hover,
 a.login-reg:hover,
-.account a:hover {
+.account a:hover{
     color: var(--red);
 }
 
 a.login:active,
+a.login-enter:active,
+a.login-reg:active,
 .account a:active{
     color: var(--basic-lightgray);
 }
 
 .item-navigation a:hover,
-.item-navigation a:focus {
+.item-navigation a:focus{
     background-color: var(--darkgrey);
 }
 
@@ -209,59 +211,48 @@ a.login:active,
     opacity: 0.5;
 }
 
-.features {
+.features,
+.contacts{
     color: var(--black);
 }
 
-.features p{
+.features p,
+.contacts p{
     font-size: 13px;
     line-height: 24px;
-    text-align: left;   
+    text-align: left; 
 }
 
-.features .features-header{
+p.features-header,
+h2.contacts-header{
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: normal;
 }
 
 .features .transport-item{
     font-size: 18px;
     line-height: 24px;
+    font-family: 'Cuprum', sans-serif;
 }
 
-.features a{
+.contacts .help,
+.features .about{
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--red);
+    font-family: 'Cuprum', sans-serif;
 }
 
-.contacts p{
-    font-size: 13px;
-    line-height: 24px;
-    text-align: left;
-    color: var(--black);
+.contacts .help:active,
+.features .about:active{
+    background-color: var(--error);
 }
-
-.contacts h2{
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--black);
-}
-
-.contacts .help{
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--white);
-    background-color: var(--red);
-}
-
 /*footer*/
 .footer-navigator{
     background-color: var(--blue);
@@ -271,7 +262,7 @@ a.login:active,
     background-color: var(--darkgrey);
 }
 
-.footer-logo {
+.footer-logo{
     background-color: var(--red);
 }
 
@@ -330,7 +321,7 @@ a.login:active,
 }
 
 /*Каталог*/
-.header-catalog {
+.header-catalog{
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
