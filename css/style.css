@@ -1,0 +1,388 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+:root {
+    --black: #000000;
+    --red: #EE3643;
+    --white: #FFFFFF;
+    --grey: #A9A9A9;
+    --light-grey: #EAEAEA;
+
+    --basic-green: #63A63E;
+    --basic-grey: #3d546f;
+    --basic-lightgray: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-lightgreen: #8ED78F;
+    --special-lightyellow: #FFD180;
+
+    --darkgrey: #293449;
+
+    --white2: #f3f7f9;
+    --white3: #F2F6F8;
+    --yellow-menu: #FFD180;
+    --verydarkblue: #161D29;
+    --darkblue: #1D2739;
+    --blue: #32425C;
+    
+    --luck: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+}
+
+/*Общие параметры*/
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--white);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*.list-navigation,
+.transport-list*/
+/*Можно сделать так списки? Общим тегом*/
+li{
+    list-style: none;
+}
+
+/*Header*/
+.logo{
+    background-color: var(--red) ;
+    background-size: 220 px 47px;
+}
+
+.main-header {
+    background-color: var(--basic-background);
+}
+
+.main-header a {
+    color: var(--white);
+}
+
+.main-menu {
+    background-color: var(--darkgrey);
+}
+
+.main-navigation{
+    background-color: var(--blue);
+}
+
+.bookmarks, 
+.basket,
+.order,
+.main-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: center;
+    text-align: left;
+    font-family: 'Cuprum', sans-serif;
+}
+
+a.order {
+    background-color: var(--basic-green);
+}
+
+.telephone a{
+    font-size: 21px;
+    line-height: 30px;
+    vertical-align: center;
+    color: var(--red);
+    font-style: bold;
+    text-align: left;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.main-header p{
+    font-size: 16px;
+    line-height: 23px;
+    vertical-align: center;
+    color: var(--red);
+    font-style: italic;
+    text-align: left;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.address {
+    font-size: 14px;
+    font-style: normal;
+    color: var(--blue);
+}
+
+a.login-enter,
+a.login-reg {
+    font-size: 21px;
+    line-height: 21px;
+    vertical-align: center;
+    color: var(--black);
+    text-align: center;
+    font-family: 'Cuprum', sans-serif;
+}
+
+a.login {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--black);
+}
+
+.account a{
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--blue);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.telephone a::before {
+    content: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+}
+
+a.bookmarks::before {
+    content: url(../img/icon-bookmark.svg);
+    background-repeat: no-repeat;
+}
+
+a.basket::before {
+    content: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+}
+
+a.login-enter::before{
+    content: url(../img/icon-login.svg);
+    background-repeat: no-repeat;
+}
+
+.logo:active {
+    background-color: var(--error);
+}
+
+a.order:hover,
+a.order:focus {
+    background-color: var(--luck);
+}
+
+a.bookmarks:active,
+a.basket:active {
+    background-color: var(--verydarkblue);
+    opacity: 0.5;
+}
+
+a.login-enter:hover,
+a.login-reg:hover,
+.account a:hover {
+    color: var(--red);
+}
+
+a.login:active,
+.account a:active{
+    color: var(--basic-lightgray);
+}
+
+.item-navigation a:hover,
+.item-navigation a:focus {
+    background-color: var(--darkgrey);
+}
+
+.item-navigation a:active{
+    background-color: var(--darkblue);
+    opacity: 0.5;
+}
+
+.features {
+    color: var(--black);
+}
+
+.features p{
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;   
+}
+
+.features .features-header{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.features .transport-item{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.features a{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.contacts p{
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    color: var(--black);
+}
+
+.contacts h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.contacts .help{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+/*footer*/
+.footer-navigator{
+    background-color: var(--blue);
+}
+
+.container{
+    background-color: var(--darkgrey);
+}
+
+.footer-logo {
+    background-color: var(--red);
+}
+
+.footer-navigator p,
+.footer-navigator .footer-tel{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white2);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.item-footer-navigation a{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.item-footer-navigation:nth-child(2n) a{
+    color: var(--yellow-menu);
+}
+
+.container p{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.container a{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--yellow-menu);
+    text-decoration: none;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.list-footer-navigation a:hover{
+    text-decoration-line: underline;
+}
+
+.list-footer-navigation a:active{
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.mail a:hover,
+.developed a:hover{
+    text-decoration-line: underline;
+}
+
+.mail a:active,
+.developed a:active{
+    text-decoration: none;
+    color: var(--red);
+}
+
+/*Каталог*/
+.header-catalog {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--blue);
+    background-color: var(--basic-background);
+}
+
+.breadcrumbs a{
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.perforator h3{
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.perforator .price-old{
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration-line: line-through;
+    color: var(--grey);
+}
+
+.perforator .price-new{
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.filter legend{
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.filter label{
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--black);
+}
