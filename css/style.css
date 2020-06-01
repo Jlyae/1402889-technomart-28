@@ -14,6 +14,7 @@
     --white: #FFFFFF;
     --grey: #A9A9A9;
     --light-grey: #EAEAEA;
+    --green: #518534;
 
     --basic-green: #63A63E;
     --basic-grey: #3d546f;
@@ -362,6 +363,40 @@ h2.contacts-header{
     font-weight: bold;
     color: var(--white);
     background-color: var(--red);
+}
+a.buy,
+a.tab{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Cuprum', sans-serif;
+}
+
+a.buy{
+    color: var(--white);
+    background-color: var(--basic-green);
+}
+
+a.buy:hover{
+    background-color: var(--luck);
+}
+
+a.buy:active{
+    background-color: var(--green);
+}
+
+a.tab{
+    color: var(--blue);
+    border: 2px solid var(--basic-green);
+}
+
+a.tab:hover{
+    border: 2px solid var(--blue);
+}
+
+a.tab:active{
+    opacity: 0.5;
 }
 
 .filter legend{
