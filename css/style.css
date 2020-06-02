@@ -25,6 +25,7 @@
     --special-lilac: #DC91D8;
     --special-lightgreen: #8ED78F;
     --special-lightyellow: #FFD180;
+    --special-yellow2: #ffc047;
 
     --darkgrey: #293449;
 
@@ -212,6 +213,77 @@ a.login-reg:active,
     opacity: 0.5;
 }
 
+/*main*/
+.promo-list h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Cuprum', sans-serif;
+    color: var(--white);
+}
+
+.promo-item-materials{
+    background-color: var(--special-yellow);
+}
+
+.promo-item-instrument{
+    background-color: var(--special-blue) ;
+}
+
+.promo-item-technic{
+    background-color: var(--special-lilac);
+}
+
+.promo-item-discount{
+    background-color: var(--special-lightgreen);
+}
+
+.promo-item-delivery{
+    background-color: var(--special-yellow2);
+}
+
+.promo-list a{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Cuprum', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.slider h3{
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+    font-weight: bold;
+    background-color: var(--luck);
+}
+
+.slider p{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--luck);
+}
+
+.slider .open-catalog{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--red);
+    opacity: 1;
+}
+
+.slider .open-catalog:active{
+    background-color: var(--error);
+}
+
 .features,
 .contacts{
     color: var(--black);
@@ -254,6 +326,7 @@ h2.contacts-header{
 .features .about:active{
     background-color: var(--error);
 }
+
 /*footer*/
 .footer-navigator{
     background-color: var(--blue);
@@ -321,7 +394,32 @@ h2.contacts-header{
     color: var(--red);
 }
 
-/*Каталог*/
+/*Товары*/
+.product h2,
+.manufacturers h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.product .all-product,
+.manufacturers .all-manufacturers{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--red);
+}
+
+.product .all-product:active,
+.manufacturers .all-manufacturers:active{
+    background-color: var(--error);
+}
+
 .header-catalog{
     font-size: 30px;
     line-height: 30px;
@@ -337,7 +435,30 @@ h2.contacts-header{
     color: var(--black);
 }
 
-.perforator h3{
+.sort h2{
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.sort a{
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.sort a:hover{
+    opacity: 1;
+}
+
+.sort a:active{
+    color: var(--red);
+    opacity: 1;
+}
+
+.perforator h3,
+.product h3{
     font-size: 18px;
     line-height: 20px;
     text-align: center;
@@ -345,7 +466,8 @@ h2.contacts-header{
     color: var(--black);
 }
 
-.perforator .price-old{
+.perforator .price-old,
+.product .price-old{
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -355,7 +477,8 @@ h2.contacts-header{
     color: var(--grey);
 }
 
-.perforator .price-new{
+.perforator .price-new,
+.product .price-new{
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -364,6 +487,7 @@ h2.contacts-header{
     color: var(--white);
     background-color: var(--red);
 }
+
 a.buy,
 a.tab{
     font-size: 14px;
@@ -399,6 +523,10 @@ a.tab:active{
     opacity: 0.5;
 }
 
+.manufacturers-list img:active{
+    opacity: 0.5;
+}
+
 .filter legend{
     font-size: 17px;
     line-height: 30px;
@@ -411,4 +539,40 @@ a.tab:active{
     line-height: 19px;
     text-transform: uppercase;
     color: var(--black);
+}
+
+.service{
+    background-color: var(--basic-background);
+}
+
+.service h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.service h3{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.service p{
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.application-credit{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--red);
 }
