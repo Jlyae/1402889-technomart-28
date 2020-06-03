@@ -241,6 +241,23 @@ a.login-reg:active,
     background-color: var(--special-yellow2);
 }
 
+
+.promo-item-materials a:hover,
+.promo-item-instrument a:hover,
+.promo-item-technic a:hover,
+.promo-item-discount a:hover,
+.promo-item-delivery a:hover{
+    background-color: var(--basic-lightgray);
+}
+
+.promo-item-materials a:active,
+.promo-item-instrument a:active,
+.promo-item-technic a:active,
+.promo-item-discount a:active,
+.promo-item-delivery a:active{
+    background-color: var(--grey);
+}
+
 .promo-list a{
     font-size: 14px;
     line-height: 18px;
@@ -258,7 +275,6 @@ a.login-reg:active,
     color: var(--white);
     font-family: 'Cuprum', sans-serif;
     font-weight: bold;
-    background-color: var(--luck);
 }
 
 .slider p{
@@ -266,7 +282,6 @@ a.login-reg:active,
     line-height: 24px;
     color: var(--white);
     font-family: 'Cuprum', sans-serif;
-    background-color: var(--luck);
 }
 
 .slider .open-catalog{
@@ -278,6 +293,16 @@ a.login-reg:active,
     font-family: 'Cuprum', sans-serif;
     background-color: var(--red);
     opacity: 1;
+}
+
+.slider-perforator{
+    background-color: var(--grey);
+    background-image: url("../img/perforator.jpg");
+}
+
+.slider-drills{
+    background-color: var(--grey);
+    background-image: url("../img/drills.jpg");
 }
 
 .slider .open-catalog:active{
@@ -439,6 +464,7 @@ h2.contacts-header{
     font-size: 13px;
     line-height: 18px;
     color: var(--black);
+    text-transform: uppercase;
 }
 
 .sort a{
@@ -446,15 +472,23 @@ h2.contacts-header{
     line-height: 18px;
     color: var(--black);
     opacity: 0.3;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--red);
 }
 
 .sort a:hover{
     opacity: 1;
+    text-decoration-style: solid;
+    text-decoration-color: var(--red);
 }
 
-.sort a:active{
+.sort a:active,
+.sort .sort-activ{
     color: var(--red);
     opacity: 1;
+    text-decoration: none;
 }
 
 .perforator h3,
@@ -565,6 +599,26 @@ a.tab:active{
     font-size: 13px;
     line-height: 24px;
     color: var(--black);
+}
+
+.service button{
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    color: var(--white);
+    background-color: var(--blue);
+
+}
+
+.service button:hover{
+    color: var(--white);
+    background-color: var(--darkgrey);
+}
+
+.service button:active{
+    color: var(--blue);
+    background-color: var(--white);
 }
 
 .application-credit{
