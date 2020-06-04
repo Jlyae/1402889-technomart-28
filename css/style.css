@@ -616,7 +616,8 @@ a.tab:active{
     background-color: var(--darkgrey);
 }
 
-.service button:active{
+.service button:active,
+.service .activ-button{
     color: var(--blue);
     background-color: var(--white);
 }
