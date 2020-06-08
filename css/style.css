@@ -85,9 +85,6 @@ img{
 /*Main header*/
 .main-header{
     /*margin-bottom: 59px;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--basic-background);
 }
 
@@ -108,10 +105,7 @@ img{
     height: 42px;*/
 }
 
-.main-menu,
-.main-сontacts,
-.main-navigation,
-main{
+.container{
     width: 940px;
     margin: 0 auto;
     padding: 0 0px;
@@ -151,7 +145,6 @@ main{
 .main-navigation{
     font-size: 18px;
     line-height: 24px;
-    vertical-align: center;
     text-align: left;
     font-family: 'Cuprum', sans-serif;
 }
@@ -405,7 +398,7 @@ h2.contacts-header{
     font-family: 'Cuprum', sans-serif;
 }
 
-.contacts .help,
+.contacts .write-us,
 .features .about{
     display: inline-block;
     padding-top: 11px;
@@ -419,7 +412,7 @@ h2.contacts-header{
     font-family: 'Cuprum', sans-serif;
 }
 
-.contacts .help{
+.contacts .write-us{
     width: 300px;
 }
 
@@ -431,7 +424,7 @@ h2.contacts-header{
     margin-bottom: 25px;
 }
 
-.contacts .help:active,
+.contacts .write-us:active,
 .features .about:active{
     background-color: var(--error);
 }
@@ -457,6 +450,12 @@ h2.contacts-header{
 }
 
 /*Товары*/
+.page-catalog{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-content: start;
+}
+
 .product h2,
 .manufacturers h2{
     font-size: 30px;
@@ -483,11 +482,23 @@ h2.contacts-header{
 }
 
 .header-catalog{
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     color: var(--blue);
-    background-color: var(--basic-background);
+    background-color: var(--basic-background); 
+}
+
+.breadcrumbs{
+    grid-column: 1 / -1;
+    padding: 0;
+    margin:0;
+    margin-top: 21px;
+    margin-bottom: 20px;
 }
 
 .breadcrumbs a{
@@ -496,6 +507,7 @@ h2.contacts-header{
     text-transform: uppercase;
     color: var(--black);
 }
+
 
 .sort h2{
     font-size: 13px;
@@ -528,7 +540,48 @@ h2.contacts-header{
     text-decoration: none;
 }
 
-.perforator h3,
+.catalog-wrapper{
+    margin-left: 20px;
+}
+
+.sort-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.catalog-item{
+    width: 220px;
+    min-height: 318px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.catalog-item:nth-child(3n+1) {
+    margin-right: 0;
+}
+
+.catalog-item h3{
+    margin-top: 28px;
+    margin-bottom: 7px;
+}
+
+.catalog-item img{
+    width: 144px;
+    height: 128px;
+    margin-top: 22px;
+    margin-left: 33px;
+    margin-right: 43px;
+}
+.catalog h3,
 .product h3{
     font-size: 18px;
     line-height: 20px;
@@ -537,8 +590,9 @@ h2.contacts-header{
     color: var(--black);
 }
 
-.perforator .price-old,
+.catalog .price-old,
 .product .price-old{
+    margin-bottom: 13px;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -548,8 +602,9 @@ h2.contacts-header{
     color: var(--grey);
 }
 
-.perforator .price-new,
+.catalog .price-new,
 .product .price-new{
+    margin-bottom: 31px;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -596,6 +651,18 @@ a.tab:active{
 
 .manufacturers-list img:active{
     opacity: 0.5;
+}
+
+.filter{
+    width: 220px;
+    min-height: 720px;
+}
+
+.filter fieldset{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    border: none;    
 }
 
 .filter legend{
@@ -669,15 +736,26 @@ a.tab:active{
     background-color: var(--red);
 }
 
-/*footer*/
-
-.footer-navigator,
-.container{
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 0px;
+.about{
+    grid-column: 1 / -1;
+    background-color: var(--basic-background);
 }
 
+.about p{
+    color: black;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about h2{
+    color: var(--black);
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+}
+
+/*footer*/
 .footer-navigator{
     display: flex;
     align-items: center;
@@ -695,7 +773,7 @@ a.tab:active{
     padding: 0 0;
 }
 
-.container{
+.holder{
     display: grid;
     grid-template-columns: 230px 1fr 140px 140px;
 }
@@ -726,21 +804,19 @@ a.tab:active{
 }
 
 .footer-wrapper{
-    outline: 5px solid rgba(0, 255, 255, 0.7);
-    outline-offset: -5px;
     padding: 0px;
     margin: 0px;
     min-height: 300px;
 }
 
-.container p{
+.holder p{
     font-size: 16px;
     line-height: 18px;
     color: var(--white);
     font-family: 'Cuprum', sans-serif;
 }
 
-.container a{
+.holder a{
     font-size: 16px;
     line-height: 18px;
     color: var(--yellow-menu);
