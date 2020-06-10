@@ -88,6 +88,7 @@
           <h3>Техника</h3>
           <a href="blank.html">Для стройки</a>
         </li>
+        <!--Почему-то странно встает блок с картинкой. Не могу понять-->
         <li class="promo-item-marketing">
           <ul class="slider">
             <li class="slider-perforator">
@@ -95,7 +96,7 @@
               <p>Настоящие мужские игрушки</p>
               <a class="open-catalog" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-drills">
+            <li class="slider-drills visually-hidden">
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
               <a class="open-catalog" href="catalog.html">Открыть каталог</a>
@@ -113,8 +114,10 @@
       </ul>
     </section>
     <section class="product">
-      <h2>Популярные товары:</h2>
-      <a class="all-product" href="blank.html">Все популярные товары</a>
+      <div class="product-wrapper">
+        <h2>Популярные товары:</h2>
+        <a class="all-product" href="blank.html">Все популярные товары</a>
+      </div>
       <ul class="product-list">
         <li class="product-item">
           <a href="product.html">
@@ -159,8 +162,10 @@
     </section>
 
     <section class="manufacturers">
-      <h2>Популярные производители:</h2>
-      <a class="all-manufacturers" href="blank.html">Все производители</a>
+      <div class="manufacturers-wrapper">
+        <h2>Популярные производители:</h2>
+        <a class="all-manufacturers" href="blank.html">Все производители</a>
+      </div>
       <ul class="manufacturers-list">
         <li class="manufacturers-item">
           <a href="blank.html">
@@ -206,39 +211,44 @@
     </section>
     <section class="service">
       <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-      <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul>
-        <li>
-          <button class="activ-button" type="button">Доставка</button>
-        </li>
-        <li>
-          <button type="button">Гарантия</button>
-        </li>
-        <li>
-          <button type="button">Кредит</button>
-        </li>
-      </ul>
-
-      <ul class="service-list">
-        <li class="service-item">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!</p>
-          <p>Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
-        </li>
-        <li class="service-item">
-          <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его
-            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж
-            восстановите как-нибудь сами.</p>
-        </li>
-        <li class="service-item">
-          <h3>Кредит</h3>
-          <p>  Залезть в долговую яму стало проще!</p>
-          <p> Кредитные консультанты придут вам на помощь.</p>
-          <a class="application-credit" href="blank.html">Отправить заявку</a>
-        </li>
-      </ul>
+      <div class="text-service">
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      </div>
+      <div class="service-wrapper1">
+        <ul class="service-item-button">
+          <li>
+            <button class="activ-button" type="button">Доставка</button>
+          </li>
+          <li>
+            <button type="button">Гарантия</button>
+          </li>
+          <li>
+            <button type="button">Кредит</button>
+          </li>
+        </ul>
+      </div>
+      <div class="service-wrapper2">
+        <ul class="service-list">
+          <li class="service-item img-delivery">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!</p>
+            <p>Ведь мы неплохо зарабатываем, <br> поднимая его на ваш этаж!</p>
+          </li>
+          <li class="service-item visually-hidden">
+            <h3>Гарантия</h3>
+            <p>Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его
+              возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж
+              восстановите как-нибудь сами.</p>
+          </li>
+          <li class="service-item visually-hidden">
+            <h3>Кредит</h3>
+            <p>  Залезть в долговую яму стало проще!</p>
+            <p> Кредитные консультанты придут вам на помощь.</p>
+            <a class="application-credit" href="blank.html">Отправить заявку</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <div class="index-columns">

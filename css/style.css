@@ -33,6 +33,7 @@ input[type="radio"].visually-hidden{
 
     --white2: #f3f7f9;
     --white3: #F2F6F8;
+    --white4: #F9F5F0;
     --yellow-menu: #FFD180;
     --verydarkblue: #161D29;
     --darkblue: #1D2739;
@@ -62,7 +63,6 @@ img{
     height: auto;
 }
 
-/*Grid*/
 .page{
     height: 100%;
 }
@@ -78,13 +78,15 @@ img{
 .list-navigation li,
 .transport-list li,
 .social-list ,
+.promo-list,
+.service-item-button,
 .list-footer-navigation li{
     list-style: none;
 }
 
 /*Main header*/
 .main-header{
-    /*margin-bottom: 59px;*/
+    margin-bottom: 59px;
     background-color: var(--basic-background);
 }
 
@@ -273,6 +275,42 @@ a.login-reg:active,
 }
 
 /*main*/
+.promo{
+    margin-bottom: 59px;
+}
+
+.promo-list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.promo-item-marketing{
+    outline-offset: -5px;
+    outline: 5px solid rgba(0, 255, 255, 0.7);
+  
+    padding: 0;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.promo-item-delivery{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.slider{
+    padding: 0;
+    margin: 0;
+}
+
 .promo-list h3{
     font-size: 24px;
     line-height: 30px;
@@ -355,11 +393,17 @@ a.login-reg:active,
 }
 
 .slider-perforator{
+    width: 620px;
+    height: 266px;
+    padding: 0;
+    margin: 0;
     background-color: var(--grey);
     background-image: url("../img/perforator.jpg");
 }
 
 .slider-drills{
+    width: 620px;
+    height: 266px;
     background-color: var(--grey);
     background-image: url("../img/drills.jpg");
 }
@@ -558,6 +602,82 @@ h2.contacts-header{
     width: 700px;
 }
 
+.product{
+    margin-bottom: 70px;
+}
+
+.product-wrapper{
+    background-color: var(--white4);
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+}
+
+.manufacturers-wrapper{
+    background-color: var(--white4);
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 20px;    
+}
+
+.manufacturers-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;   
+    margin-top: 20px; 
+}
+
+.product-item{
+    outline-offset: -5px;
+    outline: 5px solid rgba(134, 167, 166, 0.7);  
+
+    width: 220px;
+    min-height: 318px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+}
+
+.manufacturers-item{
+    outline-offset: -5px;
+    outline: 5px solid rgba(134, 167, 166, 0.7);  
+
+    width: 220px;
+    min-height: 145px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+}
+
+.product-item:nth-child(4n){
+    margin-right: 0;
+}
+
+.manufacturers-item:nth-child(4n){
+    margin-right: 0;
+}
+
+.manufacturers-item a{
+    padding: 0;
+}
+
+.product-item img{
+    width: 144px;
+    height: 128px;
+    margin-top: 22px;
+    margin-left: 33px;
+    margin-right: 43px;
+}
+
 .catalog-item{
     width: 220px;
     min-height: 318px;
@@ -681,9 +801,13 @@ a.tab:active{
 
 .service{
     background-color: var(--basic-background);
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    margin-bottom: 70px;
 }
 
 .service h2{
+    grid-column: 1 / -1;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -700,9 +824,71 @@ a.tab:active{
 }
 
 .service p{
+    margin: 0;
+    padding: 0;
     font-size: 13px;
     line-height: 24px;
     color: var(--black);
+}
+
+.service-wrapper1{
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+.text-service{
+    grid-column: 1 / -1;
+    width: 400px;
+}
+
+.service-wrapper2{
+    padding: 0;
+    margin: 0;
+    width: 619px;
+    min-height: 283px;
+    margin-top: 67px;
+    margin-left: 80px;
+}
+
+.service-list{
+    padding: 0;
+    margin: 0;
+}
+
+.service-item{
+    padding: 0;
+    margin: 0;
+}
+
+.service-item-button{
+    padding: 0;
+    margin: 0;
+}
+
+.service-item-button button{
+    width: 240px;
+    height: 61px;
+}
+
+
+.service-item h3{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.service-item p{
+    width: 313px;
+}
+
+/*Не могу картинку сдвинуть вправо...*/
+.img-delivery{
+    background-image: url(../img/delivery.png);
+    width: 468px;
+    height: 261px;
+    padding-right: 0px;
+    padding-bottom: 4px;
 }
 
 .service button{
