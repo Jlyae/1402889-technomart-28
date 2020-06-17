@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Техномарт</title>
+  <!--<link href="https://assets.htmlacademy.ru/content/skills/3/case-01/css/outline.css" rel="stylesheet">-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link rel="stylesheet"
@@ -20,29 +21,31 @@
         <a class="logo">
           <img src="img/logo-technomart.svg" width="108" height="18" alt="ИМ Техномарт">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-id">Поиск</label>
-          <input id="search-id" type="text" name="search" placeholder="Поиск">
+          <input id="search-id" type="text" name="search" placeholder="Поиск" class="input-search">
         </form>
 
-        <a class="bookmarks" href="blank.html">Закладки</a>
-        <a class="basket" href="blank.html">Корзина</a>
-        <a class="order" href="blank.html">Оформить заказ</a>
+        <a class="user-menu bookmarks" href="blank.html">Закладки: 0</a>
+        <a class="user-menu basket" href="blank.html">Корзина: 0</a>
+        <a class="user-menu order" href="blank.html">Оформить заказ</a>
       </div>
     </div>
 
     <div class="main-сontacts container">
-      <p class="name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <address class="address">
-        г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-      </address>
+      <p class="name">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
 
-      <p class="telephone">
-        <a href="tel:+78125550555">+7(812)555-05-55</a>
-      </p>
+      <div class="contact-wrapper">
+        <p class="telephone">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
+        <address class="address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+      </div>
 
-      <a class="login-enter" href="blank.html">Войти</a>
-      <a class="login-reg" href="blank.html">Регистрация</a>
+      <a class="login login-enter" href="blank.html">Войти</a>
+      <a class="login login-reg" href="blank.html">Регистрация</a>
     </div>
     <nav class="main-navigation container">
       <ul class="list-navigation">
@@ -70,6 +73,9 @@
       </ul>
     </nav>
   </header>
+
+
+  <!--
 
   <main class="container">
     <h1>Интернет-магазин Техномарт</h1>
@@ -233,14 +239,14 @@
         </li>
         <li class="service-item visually-hidden">
           <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его
-            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж
+          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
             восстановите как-нибудь сами.</p>
         </li>
         <li class="service-item visually-hidden">
           <h3>Кредит</h3>
-          <p>  Залезть в долговую яму стало проще!</p>
-          <p> Кредитные консультанты придут вам на помощь.</p>
+          <p>Залезть в долговую яму стало проще!</p>
+          <p>Кредитные консультанты придут вам на помощь.</p>
           <a class="application-credit" href="blank.html">Отправить заявку</a>
         </li>
       </ul>
@@ -385,7 +391,7 @@
       <img src="img/icon-close.svg" alt="Закрыть окно">
     </button>
   </section>
-
+-->
 </body>
 
 </html>

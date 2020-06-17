@@ -49,7 +49,7 @@ body{
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     color: var(--white);
     background-color: var(--white);
 }
@@ -59,8 +59,7 @@ a{
 }
 
 img{
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;*/
 }
 
 .page{
@@ -75,11 +74,10 @@ img{
 }
 
 /*Списки*/
-.list-navigation li,
 .transport-list li,
-.social-list ,
-.promo-list,
-.service-item-button,
+.social-list li,
+.promo-list li,
+.service-item-button li,
 .list-footer-navigation li{
     list-style: none;
 }
@@ -90,21 +88,10 @@ img{
     background-color: var(--basic-background);
 }
 
-.main-header a{
-    color: var(--white);
-}
-
 .main-menu-wrapper{
     background-color: var(--darkgrey);
+    min-height: 42px;
     width: 100%;
-}
-
-.logo{
-    background-color: var(--red) ;
-    background-size: 220px 42px;
-    /*margin-top: 5px;*/
-    /*width: 220px;
-    height: 42px;*/
 }
 
 .container{
@@ -113,131 +100,125 @@ img{
     padding: 0 0px;
 }
 
-.main-menu{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .main-navigation{ 
     margin-bottom: 60px;
 }
 
-.list-navigation{
+/*------------------------------*/
+.main-menu{
     display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    justify-content: space-around;
-    background-color: var(--blue); 
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.item-navigation a{
+.logo{
     display: block;
-    padding-top: 16px;
-    padding-bottom: 20px;
-    /*padding-right: 47px;
-    padding-left: 52px;*/
-}
-
-.bookmarks, 
-.basket,
-.order,
-.main-navigation{
-    font-size: 18px;
-    line-height: 24px;
-    text-align: left;
-    font-family: 'Cuprum', sans-serif;
-}
-
-a.bookmarks,
-a.basket,
-a.order{
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-
-a.order{
-    background-color: var(--basic-green);
-    width: 150px;
-    text-align: center;
-}
-
-.telephone a{
-    font-size: 21px;
-    line-height: 30px;
-    color: var(--red);
-    font-weight: bold;
-    text-align: left;
-    font-family: 'Cuprum', sans-serif;
-}
-
-p.name{
-    font-size: 16px;
-    line-height: 23px;
-    vertical-align: center;
-    color: var(--red);
-    font-style: italic;
-    text-align: left;
-    font-family: 'Cuprum', sans-serif;
-}
-
-.address{
-    font-size: 14px;
-    font-style: normal;
-    color: var(--blue);
-    font-family: 'Cuprum', sans-serif;    
-}
-
-a.login-enter,
-a.login-reg{
-    font-size: 21px;
-    line-height: 21px;
-    vertical-align: center;
-    color: var(--black);
-    text-align: center;
-    font-family: 'Cuprum', sans-serif;
-}
-
-a.login{
-    font-size: 21px;
-    line-height: 21px;
-    text-align: center;
-    color: var(--black);
-    font-family: 'Cuprum', sans-serif;
-}
-
-.account a{
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: var(--blue);
-    font-family: 'Cuprum', sans-serif;
-}
-
-.telephone a::before{
-    content: url(../img/icon-phone.svg);
-    background-repeat: no-repeat;
-}
-
-a.bookmarks::before{
-    content: url(../img/icon-bookmark.svg);
-    background-repeat: no-repeat;
-}
-
-a.basket::before{
-    content: url(../img/icon-cart.svg);
-    background-repeat: no-repeat;
-}
-
-a.login-enter::before{
-    content: url(../img/icon-login.svg);
-    background-repeat: no-repeat;
+    background-color: var(--red) ;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 55px;
+    padding-right: 57px;
+    margin-right: 17px;
+    box-shadow: 0px 5px var(--error);
+    font-size: 1px; 
 }
 
 .logo:active{
     background-color: var(--error);
+}
+
+.main-header a{
+    color: var(--white);
+}
+
+.user-menu{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.input-search{
+    width: 217px;
+}
+.search{
+    position: relative;
+    padding-left: 22px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+    margin-right: 27px;/*23px;*/
+}
+
+.search::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;    
+}
+
+a.bookmarks{
+    position: relative;
+    width: 115px;  
+    padding-left: 22px;/*26px;*/ 
+    margin-right: 38px;/*26px;*/
+    margin-left: 0px;
+}
+
+a.bookmarks::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 14px;
+    height: 16px;
+    background-image: url(../img/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;    
+}
+
+a.basket{
+    position: relative;
+    width: 124px;
+    padding-left: 22px;/*25px;*/
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+a.basket::before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;    
+}
+
+a.bookmarks:active,
+a.basket:active{
+    background-color: var(--verydarkblue);
+    opacity: 0.5;
+}
+
+a.order{
+    display: block;
+    width: 182px;/*174px;/*150px;*/
+    text-align: center;
+    background-color: var(--basic-green);
+    /*  padding-left: 19px;
+    padding-right: 16px;
+    padding-bottom: 9px;
+    padding-top: 9px;*/
 }
 
 a.order:hover,
@@ -245,10 +226,117 @@ a.order:focus{
     background-color: var(--luck);
 }
 
-a.bookmarks:active,
-a.basket:active{
-    background-color: var(--verydarkblue);
-    opacity: 0.5;
+/*------------------------------*/
+.main-сontacts{
+    /*display: grid;
+    grid-template-columns: 227px 1fr 121px 150px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p.name{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 197px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-size: 16px;
+    line-height: 24px;  /*При 24 текст сходится, но это не соответствует макетую В нем 23px. Можно ли изменять это значение?*/
+    font-style: italic;
+    text-align: left;
+    color: var(--red);
+}
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ;
+}
+
+p.telephone{
+    margin: 0px;
+}
+
+.telephone a{
+    position: relative;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 76px;
+    padding-right: 45px;
+    margin-top: 5px;
+    border: 2px solid var(--white);
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;  
+    color: var(--red);
+}
+
+.telephone a::before{
+    content: "";
+    position: absolute;
+    left: 39px;
+    top: 13px;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;    
+}
+
+.address{
+    text-align: center;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;  
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--blue);  
+}
+
+a.login{
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--black);
+}
+
+a.login-enter{
+    position: relative;
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 67px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 45px;
+    padding-right: 27px;
+    background-color: var(--white);
+}
+
+a.login-enter::before{
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 14px;
+    width: 20px;
+    height: 17px;
+    background-image: url(../img/icon-login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+a.login-reg{
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 67px;
+    margin-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: var(--white);
 }
 
 a.login-enter:hover,
@@ -258,10 +346,53 @@ a.login-reg:hover,
 }
 
 a.login:active,
-a.login-enter:active,
-a.login-reg:active,
 .account a:active{
     color: var(--basic-lightgray);
+}
+
+.account a{
+    font-family: 'Cuprum', "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--blue);
+}
+/*-------------------------*/
+
+.main-navigation{
+    font-family: 'Cuprum', "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    /*text-align: left;*/
+}
+
+
+.list-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 60px;
+    justify-content: space-between;
+    background-color: var(--blue); 
+
+}
+
+.item-navigation:first-child a{
+    padding-left: 52px;
+}
+
+.item-navigation:last-child a{
+    padding-right: 47px;
+}
+.item-navigation a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 30px;
 }
 
 .item-navigation a:hover,
