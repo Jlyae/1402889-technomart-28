@@ -172,8 +172,8 @@ a{
 }
 
 .input-search{
-    width: 262px;
-    height: 43px;
+    width: 217px;
+    height: 40px;
     background-color: var(--darkgrey);
     color: var(--white);
     opacity: 1;
