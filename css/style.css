@@ -66,7 +66,7 @@ body{
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: var(--white);
     background-color: var(--white);
 }
@@ -148,7 +148,7 @@ a{
 .user-menu{
     padding-top: 9px;
     padding-bottom: 9px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 24px;
 }
@@ -156,7 +156,7 @@ a{
 .search{
     position: relative;
     padding-left: 22px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: var(--white);
@@ -186,12 +186,18 @@ a{
     opacity: 0.3;
 }
 
-.search-icon:hover{
+.input-search:hover + .search-icon{
     opacity: 1;
 }
 
-.search:active{
-    opacity: 0.3;
+.input-search:focus + .search-icon{
+    fill: var(--red);
+}
+
+.input-search:focus{
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
 }
 
 /*a.bookmarks{
@@ -296,7 +302,7 @@ p.name{
     margin-left: 30px;
     margin-right: 20px;
     width: 197px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 16px;
     line-height: 24px;  
     font-style: italic;
@@ -324,7 +330,7 @@ p.telephone{
     padding-right: 45px;
     margin-top: 5px;
     border: 2px solid var(--white);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;  
@@ -345,7 +351,7 @@ p.telephone{
 
 .address{
     text-align: center;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;  
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -353,7 +359,7 @@ p.telephone{
 }
 
 a.login{
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 21px;
     line-height: 21px;
     color: var(--black);
@@ -415,7 +421,7 @@ a.login:active,
     display: inline-block;
     margin-left: 9px;
     margin-right: 11px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
@@ -470,9 +476,9 @@ a.login:active,
 .login-exit-icon:active path{
     fill: var(--basic-lightgray);
 }
-/*-------------------------*/
+
 .main-navigation{
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 24px;
 }
@@ -532,7 +538,7 @@ a.login:active,
     margin-left: 23px;
     margin-top: 20px;
     margin-bottom: 14px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: var(--white);
@@ -548,7 +554,7 @@ a.login:active,
     padding-bottom: 10px;
     padding-left: auto;
     padding-right: auto;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 18px;  
     color: var(--white);
@@ -607,7 +613,6 @@ a.login:active,
 .promo-item-discount a:hover,
 .promo-item-delivery a:hover{
     background-color: var(--basic-lightgray3);
-    box-shadow: 0px 4px 4px var(--black-opacity25);
 }
 
 .promo-item-materials a:active,
@@ -636,7 +641,7 @@ a.login:active,
     padding-top: 23px;
     padding-left: 24px;
     margin-bottom: 5px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
@@ -646,7 +651,7 @@ a.login:active,
 
 .slider p{
     margin: 0;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     margin-left: 24px;
     font-size: 18px;
     line-height: 24px;
@@ -664,7 +669,7 @@ a.login:active,
     margin-top: 113px;
     margin-bottom: 27px;
     margin-left: 24px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -748,7 +753,7 @@ a.slider-next{
     vertical-align: top;
     width: 100px; 
     height: 30px; 
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 14px;
@@ -786,7 +791,7 @@ a.slider-next{
     padding-top: 31px;
     padding-bottom: 30px;
     padding-left: 28px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -802,7 +807,7 @@ a.slider-next{
     margin-top: 25px;
     margin-bottom: 26px;
     margin-right: 14px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -819,7 +824,7 @@ a.slider-next{
     margin-top: 25px;
     margin-bottom: 26px;
     margin-right: 19px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -860,16 +865,10 @@ a.slider-next{
     display: flex;
     justify-content: center;
     align-items: center;
-   /* width: 170px;
-    height: 157px;
-    margin-top: 6px;
-    margin-left: 19px;*/
     width: 218px;
     height: 161px;
-    /*margin-left: -7px;*/
     margin-left: -5px;
-    margin-top: 4px;
-   
+    margin-top: 4px;  
 }
 
 .product-item h3{
@@ -963,7 +962,7 @@ a.buy{
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 a.tab{
@@ -973,7 +972,7 @@ a.tab{
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;   
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .buy{
@@ -1100,7 +1099,7 @@ a.tab:active{
     font-weight: normal;
     text-transform: uppercase;
     color: var(--black);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .text-service{
@@ -1115,7 +1114,7 @@ a.tab:active{
     line-height: 30px;
     text-transform: uppercase;
     color: var(--blue);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .service p{
@@ -1165,7 +1164,7 @@ a.tab:active{
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: var(--white);
     background-color: var(--blue);
     box-shadow: 0px 4px 4px var(--black-opacity25), 0px 1px 0px var(--darkgrey), inset 0px 1px 0px var(--blue-shadow);
@@ -1250,7 +1249,7 @@ a.tab:active{
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     background-color: var(--red);
 }
 
@@ -1274,7 +1273,7 @@ h2.contacts-header{
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-weight: normal;
 }
 
@@ -1298,7 +1297,7 @@ h2.contacts-header{
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--red);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .contacts .write-us{
@@ -1312,7 +1311,7 @@ h2.contacts-header{
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--red);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .features,
@@ -1361,7 +1360,7 @@ p.features-p{
     padding-left: 37px;
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     margin-top: 4px;
     margin-bottom: 11px;
 }
@@ -1397,7 +1396,7 @@ p.features-p{
     text-transform: uppercase;
     color: var(--blue);
     background-color: var(--basic-background); 
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .breadcrumbs{
@@ -1643,6 +1642,8 @@ p.features-p{
     width: 100%;
     padding-top: 7px;
     padding-bottom: 9px;
+    border: 1px solid var(--gray-paginator);
+    background-color: var(--white);
 }
 
 /*.filter h3{
@@ -1759,11 +1760,6 @@ p.features-p{
    /* margin-bottom: 1px;*/
 }
 
-.catalog-paginator-active{
-    background-color: var(--red);
-    color: var(--white);
-}
-
 .paginator{
     display: inline-block;
     margin-right: 9px;
@@ -1774,6 +1770,13 @@ p.features-p{
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    color: var(--black);
+}
+
+.catalog-paginator-active{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
 }
 
 .paginator:last-child{
@@ -1803,14 +1806,10 @@ p.features-p{
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     padding-top: 64px;
     font-weight: normal;
 }
-
-
-
-
 
 /*footer*/
 .footer-container-nav{
@@ -1852,7 +1851,7 @@ p.features-p{
     font-size: 18px;
     line-height: 24px;
     color: var(--white2);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .footer-navigator .footer-tel{
@@ -1862,7 +1861,7 @@ p.features-p{
     font-size: 18px;
     line-height: 24px;
     color: var(--white2);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .list-footer-navigation-top a:hover,
@@ -1900,14 +1899,14 @@ p.features-p{
 .item-footer-navigation-top a{
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: var(--white);
 }
 
 .item-footer-navigation-bottom a{
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: var(--yellow-menu);
 }
 
@@ -1926,7 +1925,7 @@ p.features-p{
     font-size: 16px;
     line-height: 18px;
     color: var(--white);
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .holder a{
@@ -1934,7 +1933,7 @@ p.features-p{
     line-height: 18px;
     color: var(--yellow-menu);
     text-decoration: none;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .copyright{
@@ -2023,6 +2022,7 @@ p.features-p{
     top: calc(50% - 215px);
     left: calc(50% - 310px);
     background-color: var(--white);
+    z-index: 10;
 }
 
 .letter-wrapper{
@@ -2039,7 +2039,7 @@ p.features-p{
     color: var(--black);
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .letter input{
@@ -2053,7 +2053,7 @@ p.features-p{
     padding-left: 9px;
     font-size: 13px;
     line-height: 24px;
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .letter-item{
@@ -2070,15 +2070,15 @@ p.letter-item{
 }
 
 .letter textarea{
+    width: 440px;
     margin-top: 10px;
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     border: 2px solid var(--basic-lightgray);
     border-radius: 2px;
     padding-left: 11px;
     padding-top: 4px;
-    padding-right: 9px;
     padding-bottom: 11px;
     color: var(--grey);
 }
@@ -2106,7 +2106,7 @@ p.letter-item{
     border: none;
     font-size: 14px;
     line-height: 18px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .letter .button-close{
@@ -2126,6 +2126,7 @@ p.letter-item{
     box-shadow: 0px 4px 20px var(--black-opacity15);
     border-top: solid 7px var(--red);
     background-color: var(--white);
+    z-index: 10;
 }
 
 .maps-popup .button-close{
@@ -2157,6 +2158,7 @@ iframe{
     top: calc(50% - 141px);
     left: calc(50% - 310px);
     background-color: var(--white);
+    z-index: 10;
 }
 
 .basket-ok p{
@@ -2164,7 +2166,7 @@ iframe{
     text-align: center;
     margin-top: 66px;
     margin-bottom: 68px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
@@ -2212,7 +2214,7 @@ iframe{
     border: none;
     font-size: 14px;
     line-height: 18px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;  
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .purchases{
@@ -2230,5 +2232,5 @@ iframe{
     border: none;
     font-size: 14px;
     line-height: 18px;
-    font-family: 'Cuprum', 'Tahoma', sans-serif;  
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
