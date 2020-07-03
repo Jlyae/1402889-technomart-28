@@ -1087,7 +1087,7 @@ a.tab:active{
 /*Сервисы*/
 .service{
     background-color: var(--basic-background);
-    margin-top: 50px;
+    margin-top: 48px;
     padding-bottom: 4px;
 }
 
@@ -1173,7 +1173,7 @@ a.tab:active{
     font-family: "Cuprum", "Tahoma", sans-serif;
     color: var(--white);
     background-color: var(--blue);
-    box-shadow: 0px 4px 4px var(--black-opacity25), 0px 1px 0px var(--darkgrey), inset 0px 1px 0px var(--blue-shadow);
+    box-shadow: 0px 1px 0px var(--darkgrey), inset 0px 1px 0px var(--blue-shadow);
 }
 
 .service button:hover{
@@ -1274,7 +1274,7 @@ a.tab:active{
 
 h2.features-header,
 h2.contacts-header{
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     margin-top: 1px;
     font-size: 30px;
     line-height: 30px;
@@ -1551,6 +1551,11 @@ p.features-p{
     justify-content: space-between;
 }
 
+.price-controls span{
+    color: var(--black);
+    padding-top: 12px;
+}
+
 .price-controls input{
     width: 64px;
     padding: 10px;
@@ -1566,7 +1571,7 @@ p.features-p{
 }
 
 .filter-maker{
-    margin-top: 43px;
+    margin-top: 39px;
     margin-left: 0px;
 }
 
@@ -1582,6 +1587,10 @@ p.features-p{
     user-select: none;
 }
 
+.filter-radio{
+    position: relative;
+}
+
 .filter-input-checkbox + label::before{
     content: "";
     position: absolute;
@@ -1592,6 +1601,7 @@ p.features-p{
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.9;
 }
 
 .filter-input-checkbox:checked + label::before{
@@ -1604,30 +1614,53 @@ p.features-p{
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.9;
+}
+
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-checkbox:hover + label::before{
+    opacity: 1;
+}
+
+.filter-input-checkbox:checked:disabled + label::before,
+.filter-input-checkbox:disabled + label::before{
+    opacity: 0.3;
 }
 
 .filter-input-radio + label::before{
     content: "";
     position: absolute;
-    left: -42px;
-    top: -1px;
+    left: -35px;
+    top: -3px;
     width: 25px;
     height: 25px;
     background-image: url(../img/radio-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.9;
 }
 
 .filter-input-radio:checked + label::before{
     content: "";
     position: absolute;
-    top: 5px;
-    left: -36px;
+    left: -35px;
+    top: -3px;
     width: 25px;
     height: 25px;
     background-image: url(../img/radio-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.9;
+}
+
+.filter-input-radio:checked:hover + label::before,
+.filter-input-radio:hover + label::before{
+    opacity: 1;
+}
+
+.filter-input-radio:checked:disabled + label::before,
+.filter-input-radio:disabled + label::before{
+    opacity: 0.3;
 }
 
 .filter-power{
@@ -1644,9 +1677,9 @@ p.features-p{
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
-    margin-top: 21px;
+    margin-top: 22px;
     width: 100%;
-    padding-top: 7px;
+    padding-top: 9px;
     padding-bottom: 9px;
     border: 1px solid var(--gray-paginator);
     background-color: var(--white);
@@ -1668,7 +1701,7 @@ p.features-p{
 .sort{
     display: flex;
     background-color: var(--beige);
-    padding-bottom: 4px;
+    padding-bottom: 10px;
     border-radius: 3px;
 }
 
@@ -1727,16 +1760,21 @@ p.features-p{
 
 .up-dir{
     display: block;
-    padding-top: 16px;
+    padding-top: 11px;
     padding-left: 44px;
     text-decoration: none;
 }
 
 .down-dir{
     display: block;
-    padding-top: 15px;
+    padding-top: 11px;
     padding-left: 21px;
     text-decoration: none;
+}
+
+.down-dir path, 
+.up-dir path{
+    fill: var(--basic-lightgray);
 }
 
 .down-dir:active path,
@@ -1779,6 +1817,14 @@ p.features-p{
     color: var(--black);
 }
 
+.paginator:hover{
+    border: 1px solid var(--basic-lightgray);
+}
+
+.paginator:active{
+    border: 1px solid var(--red);
+}
+
 .catalog-paginator-active{
     background-color: var(--red);
     color: var(--white);
@@ -1792,7 +1838,7 @@ p.features-p{
 
 .about-wrapper{
     background-color: var(--basic-background);
-    padding-bottom: 70px;
+    padding-bottom: 69px
 }
 
 .about{
@@ -1803,7 +1849,7 @@ p.features-p{
 .about p{
     color: var(--black);
     font-size: 13px;
-    line-height: 24px;
+    line-height: 25px;
     margin: 0;
 }
 
