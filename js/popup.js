@@ -4,6 +4,12 @@ var letterClose = document.querySelector(".button-close");
 var letterForm = document.querySelector(".letter-forms");
 var letterName = document.querySelector(".letter-name");
 var letterEmail = document.querySelector(".letter-email");
+var map = document.querySelector(".maps-popup");
+var mapJpg = document.querySelector(".maps-little");
+var closeMap = document.querySelector(".button-close-map");
+var addBasket = document.querySelectorAll(".buy");
+var windowBasket = document.querySelector(".basket-ok")
+var closeBasket = document.querySelector(".button-close-basket");
 
 var isStorageSupport = true;
 var storage = "";
@@ -20,7 +26,8 @@ writeUs.addEventListener("click", function (evt) {
     if (storage) {
         letterName.value = storage;
         letterEmail.focus();
-    } else {
+    }
+    else {
         letterName.focus();
     }
 });
@@ -37,7 +44,8 @@ letterForm.addEventListener("submit", function (evt) {
         letter.classList.remove("modal-error");
         letter.offsetWidth = letter.offsetWidth;
         letter.classList.add("modal-error");
-    } else {
+    }
+    else {
         if (isStorageSupport) {
             localStorage.setItem("letterName", letterName.value);
         }
@@ -51,5 +59,35 @@ window.addEventListener("keydown", function (evt) {
             letter.classList.remove("letter-show")
             letter.classList.remove("modal-error");
         }
+        else if (map.classList.contains("maps-show")) {
+            evt.preventDefault();
+            map.classList.remove("maps-show");
+        }
+        else if (windowBasket.classList.contains("basket-show")) {
+            evt.preventDefault();
+            windowBasket.classList.remove("basket-show");
+        }
     }
+})
+
+mapJpg.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    map.classList.add("maps-show");
+})
+
+closeMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    map.classList.remove("maps-show");
+})
+
+for (let elementBasket of addBasket) {
+    elementBasket.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        windowBasket.classList.add("basket-show");
+    })
+}
+
+closeBasket.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    windowBasket.classList.remove("basket-show");
 })

@@ -881,7 +881,7 @@ a.slider-next{
     margin: 0px;
     margin-left: 21px;
     margin-right: 22px;
-    margin-top: 15px;
+    margin-top: 12px; /*15px;*/
     font-size: 18px;
     line-height: 20px;
     text-align: center;
@@ -1294,7 +1294,7 @@ h2.contacts-header{
 .features .features-about{
     width: 220px;
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 10px;
     padding-top: 11px;
     padding-bottom: 9px;
     font-size: 14px;
@@ -1326,7 +1326,7 @@ h2.contacts-header{
 }
 
 .features p{
-    margin-bottom: 25px;
+    margin-bottom: 29px;
     font-size: 13px;
     line-height: 24px;
     text-align: left; 
@@ -1334,7 +1334,7 @@ h2.contacts-header{
 
 .contacts p{
     width: 210px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     font-size: 13px;
     line-height: 24px;
     text-align: left; 
@@ -1421,8 +1421,7 @@ p.features-p{
     list-style: none;
 }
 
-.breadcrumbs-item:first-child::before{
-    content: "";
+.home{
     position: absolute;
     left: -16px;
     top: 4px;
@@ -1479,7 +1478,7 @@ p.features-p{
 
 .filter-item{
     margin: 0;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: 10px;
 }
 
@@ -1553,14 +1552,14 @@ p.features-p{
 
 .price-controls span{
     color: var(--black);
-    padding-top: 12px;
+    padding-top: 9px;
 }
 
 .price-controls input{
     width: 64px;
     padding: 10px;
-    padding-left: 24px;
-    padding-right: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
     border: none;
     border-radius: 3px;
@@ -1571,7 +1570,7 @@ p.features-p{
 }
 
 .filter-maker{
-    margin-top: 39px;
+    margin-top: 43px;
     margin-left: 0px;
 }
 
@@ -1609,7 +1608,7 @@ p.features-p{
     position: absolute;
     top: -3px;
     left: -35px;
-    width: 23px;
+    width: 27px;
     height: 23px;
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
@@ -1807,7 +1806,7 @@ p.features-p{
 .paginator{
     display: inline-block;
     margin-right: 9px;
-    margin-top: 1px;
+    margin-top: -1px;
     border-radius: 2px;
     border: 1px solid var(--gray-paginator);
     padding-top: 10px;
@@ -2190,7 +2189,11 @@ p.letter-item{
     z-index: 10;
 }
 
-.maps-popup .button-close{
+.maps-show{
+    display: block;
+}
+
+.maps-popup .button-close-map{
     position: absolute;
     right: 4px;
     top: 10px;
@@ -2222,6 +2225,10 @@ iframe{
     z-index: 10;
 }
 
+.basket-show{
+    display: block;
+}
+
 .basket-ok p{
     position: relative;
     text-align: center;
@@ -2250,7 +2257,7 @@ iframe{
     background-color: var(--grey-wrapper);
 }
 
-.basket-ok .button-close{
+.basket-ok .button-close-basket{
     position: absolute;
     right: 5px;
     top: 11px;

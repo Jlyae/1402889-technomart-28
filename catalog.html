@@ -57,12 +57,10 @@
       </div>
 
       <div class="login-wrapper-user">
-        <a href="blank.html">
-          <svg class="login-user-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-            <path fill="#c5c5c5"
-              d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
-          </svg>
-        </a>
+        <svg class="login-user-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+          <path fill="#c5c5c5"
+            d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
+        </svg>
         <a class="login login-user" href="blank.html">Равшан Джамшутович</a>
 
         <a href="blank.html">
@@ -120,7 +118,7 @@
     <div class="page-catalog container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a href="index.html"></a>
+          <a class="home" href="index.html"></a>
         </li>
         <li class="breadcrumbs-item">
           <a href="catalog.html">Каталог</a>
@@ -152,9 +150,9 @@
                 </div>
               </div>
               <div class="price-controls">
-                <input type="number" name="min-price" value="0">
+                <input type="text" name="min-price" value="0">
                 <span>&#8212;</span>
-                <input type="number" name="max-price" value="30000">
+                <input type="text" name="max-price" value="30000">
               </div>
             </div>
           </fieldset>
@@ -469,7 +467,7 @@
 
   <section class="basket-ok">
     <h2 class="visually-hidden">Успешное добавление в корзину</h2>
-    <button class="button-close" type="button">
+    <button class="button-close-basket" type="button">
       <img src="img/icon-close.svg" alt="Закрыть окно">
     </button>
     <p>Товар добавлен в корзину!</p>
@@ -478,7 +476,7 @@
       <a class="purchases" href="catalog.html">Продолжить покупки</a>
     </div>
   </section>
-
+  <script src="js/popup-catalog.js"></script>
 </body>
 
 </html>
