@@ -8,7 +8,7 @@ var map = document.querySelector(".maps-popup");
 var mapJpg = document.querySelector(".maps-little");
 var closeMap = document.querySelector(".button-close-map");
 var addBasket = document.querySelectorAll(".buy");
-var windowBasket = document.querySelector(".basket-ok")
+var windowBasket = document.querySelector(".basket-ok");
 var closeBasket = document.querySelector(".button-close-basket");
 
 var isStorageSupport = true;
@@ -56,7 +56,7 @@ window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
         if (letter.classList.contains("letter-show")) {
             evt.preventDefault();
-            letter.classList.remove("letter-show")
+            letter.classList.remove("letter-show");
             letter.classList.remove("modal-error");
         }
         else if (map.classList.contains("maps-show")) {
@@ -68,26 +68,26 @@ window.addEventListener("keydown", function (evt) {
             windowBasket.classList.remove("basket-show");
         }
     }
-})
+});
 
 mapJpg.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.add("maps-show");
-})
+});
 
 closeMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("maps-show");
-})
+});
 
 for (let elementBasket of addBasket) {
     elementBasket.addEventListener("click", function (evt) {
         evt.preventDefault();
         windowBasket.classList.add("basket-show");
-    })
+    });
 }
 
 closeBasket.addEventListener("click", function (evt) {
     evt.preventDefault();
     windowBasket.classList.remove("basket-show");
-})
+});
