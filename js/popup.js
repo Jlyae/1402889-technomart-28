@@ -7,9 +7,6 @@ var letterEmail = document.querySelector(".letter-email");
 var map = document.querySelector(".maps-popup");
 var mapJpg = document.querySelector(".maps-little");
 var closeMap = document.querySelector(".button-close-map");
-var addBasket = document.querySelectorAll(".buy");
-var windowBasket = document.querySelector(".basket-ok");
-var closeBasket = document.querySelector(".button-close-basket");
 
 var isStorageSupport = true;
 var storage = "";
@@ -63,10 +60,6 @@ window.addEventListener("keydown", function (evt) {
             evt.preventDefault();
             map.classList.remove("maps-show");
         }
-        else if (windowBasket.classList.contains("basket-show")) {
-            evt.preventDefault();
-            windowBasket.classList.remove("basket-show");
-        }
     }
 });
 
@@ -78,16 +71,4 @@ mapJpg.addEventListener("click", function (evt) {
 closeMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("maps-show");
-});
-
-for (let elementBasket of addBasket) {
-    elementBasket.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        windowBasket.classList.add("basket-show");
-    });
-}
-
-closeBasket.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    windowBasket.classList.remove("basket-show");
 });
