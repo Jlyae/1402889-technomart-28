@@ -9,7 +9,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -151,12 +151,10 @@
               </div>
               <div class="price-controls">
                 <label for="min-price" class="visually-hidden">Минимальное значение</label>
-                <input type="text" name="min-price" value="0">
-
+                <input type="text" name="min-price" id="min-price" value="0">
                 <span>&#8212;</span>
-                <label class="visually-hidden">Максимальное значение
-                  <input type="text" name="max-price" value="30000">
-                </label>
+                <label for="max-price" class="visually-hidden">Максимальное значение</label>
+                <input type="text" name="max-price" id="max-price" value="30000">
               </div>
             </div>
           </fieldset>
@@ -480,7 +478,7 @@
       <a class="purchases" href="catalog.html">Продолжить покупки</a>
     </div>
   </section>
-  <script src="js/popup.js"></script>
+  <script src="js/popup.min.js"></script>
 </body>
 
 </html>
