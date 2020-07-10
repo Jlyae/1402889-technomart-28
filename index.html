@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -56,16 +55,18 @@
         </address>
       </div>
 
-      <div class="login-wrapper">
-        <a class="login login-enter" href="blank.html">Войти
-          <svg class="login-enter-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-            <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
-            <path fill="#c5c5c5"
-              d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
-          </svg>
-        </a>
+      <div class="wrapper-authorization">
+        <div class="login-wrapper">
+          <a class="login login-enter" href="blank.html">Войти
+            <svg class="login-enter-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+              <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
+              <path fill="#c5c5c5"
+                d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+            </svg>
+          </a>
+        </div>
+        <a class="login login-reg" href="blank.html">Регистрация</a>
       </div>
-      <a class="login login-reg" href="blank.html">Регистрация</a>
     </div>
     <nav class="main-navigation container">
       <ul class="list-navigation">
@@ -112,12 +113,12 @@
           <a class="promo-section" href="blank.html">Для стройки</a>
         </li>
         <li class="promo-item-marketing">
-          <a class="slider-back" href="#">
+          <a class="slider-back" title="Слайд назад" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
               <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z" />
             </svg>
           </a>
-          <a class="slider-next" href="#">
+          <a class="slider-next" title="Слайд вперед" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
               <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z" />
             </svg>
@@ -263,18 +264,19 @@
           </li>
         </ul>
         <ul class="service-list">
-          <li class="service-item img-delivery service-current">
+          <li class="service-item delivery img-delivery service-current">
             <h3>Доставка</h3>
             <p>Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!</p>
             <p>Ведь мы&nbsp;неплохо заработаем, <br> поднимая его на&nbsp;ваш этаж!</p>
           </li>
-          <li class="service-item img-guarantee ">
+          <li class="service-item guarantee img-guarantee">
             <h3>Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+              спровоцированного его
               возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
               восстановите как-нибудь сами.</p>
           </li>
-          <li class="service-item img-credit">
+          <li class="service-item credit img-credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще!</p>
             <p>Кредитные консультанты придут вам на помощь.</p>
@@ -390,7 +392,7 @@
         </p>
 
         <p class="developed">Разработано&nbsp;&mdash;
-          <a href="htmlacademy.ru">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </div>
@@ -452,8 +454,7 @@
     </div>
   </section>
 
-  <script src="js/popup.min.js"></script>
-  <script src="js/popup-catalog.min.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
