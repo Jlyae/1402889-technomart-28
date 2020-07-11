@@ -1262,7 +1262,7 @@ p.guarantee-text{
     display: block;
     margin: 0;
     padding: 0;
-    margin-top: 27px;
+    margin-top: 25px;
     margin-right: 426px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1297,7 +1297,7 @@ p.guarantee-text{
 
 h2.features-header,
 h2.contacts-header{
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     margin-top: 0px;
     font-size: 30px;
     line-height: 30px;
@@ -1321,7 +1321,7 @@ h2.contacts-header{
     display: inline-block;
     vertical-align: middle;
     margin-top: 8px;
-    padding-top: 9px;
+    padding-top: 8px;
     padding-bottom: 11px;
     padding-left:40px;
     font-size: 14px;
@@ -1337,8 +1337,8 @@ h2.contacts-header{
     display: inline-block;
     vertical-align: middle;
     margin-top: 21px;
-    padding-top: 13px;
-    padding-bottom: 7px;
+    padding-top: 9px;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -1355,7 +1355,7 @@ h2.contacts-header{
 
 .features p{
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     font-size: 13px;
     line-height: 24px;
     text-align: left; 
@@ -1393,29 +1393,6 @@ h2.contacts-header{
     left: 0;    
     top: 11px;
     background-color: var(--red);
-}
-
-@-moz-document url-prefix(){
-    h2.features-header, h2.contacts-header{
-        margin-bottom: 24px;
-    }
-
-    .features p{
-        margin-bottom: 25px;
-    }    
-
-    .contacts .write-us{
-        padding-top: 9px;
-        padding-bottom: 10px;
-    }
-
-    .features .features-about{
-        padding-top: 8px;
-    }
-
-    .application-credit{
-        margin-top: 25px;
-    }
 }
 
 p.features-p{
@@ -1622,11 +1599,6 @@ p.features-p{
     text-transform: uppercase;
 }
 
-.filter-maker{
-    margin-top: 41px;
-    margin-left: 0px;
-}
-
 .filter-option{
     margin-top: 20px;
     margin-left: -5px;
@@ -1736,6 +1708,11 @@ p.features-p{
 
 .filter-power{
     margin-top: 29px;
+    margin-left: 0px;
+}
+
+.filter-maker{
+    margin-top: 41px;
     margin-left: 0px;
 }
 
