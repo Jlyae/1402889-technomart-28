@@ -1519,6 +1519,7 @@ p.features-p{
 .filter legend{
     font-size: 17px;
     line-height: 30px;
+    font-weight: bold;
     text-transform: uppercase;
     color: var(--black);
 }
